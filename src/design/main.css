@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+.menu-item{
+
+ h1{
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+span{
+    font-size: 0.9rem;
+    font-style: italic;
+}
+}
