@@ -5,35 +5,46 @@ import CategoryCard from './components/CategoryCard'
 import MenuItem from './components/MenuItem'
 import menu from './data/menuData'
 import './design/main.css'
-
+import coffeeImage from "./assets/pictures/coffee.jfif"
+import breakfastImage from "./assets/pictures/download (19).jfif"
+import pastaImage from "./assets/pictures/Rigatoni.jfif"
+import burgurImage from "./assets/pictures/Burger Clipart_ 4K & Vector in Minimalist Art Style.jfif"
+import pizzaImage from "./assets/pictures/pizza.jfif"
+import appetizerImage from "./assets/pictures/nacho food mexican cartoon nacho food mexican png.jfif"
+import cakeImage from "./assets/pictures/Cheesecake Clipart PNG _ 10 JPG _ Watercolor Cake Baking Clipart Food Clipart Kawaii Dessert Strawberry Oreo Nutella Cake Dessert Cake.jfif"
+import drinkImage from "./assets/pictures/drink.jfif"
 const categories = [
   {
     name: "coffee",
-    image:""
+    image: coffeeImage
   },
   {
     name: "breakfast",
-    image: ""
+    image: breakfastImage
   },
   {
     name: "appetizer",
-    image: ""
+    image: appetizerImage
   },
   {
     name: "burgers",
-    image: ""
+    image: burgurImage
   },
   {
     name: "pizza",
-    image: ""
+    image: pizzaImage
   },
   {
     name: "pasta",
-    image: ""
+    image: pastaImage
   },
   {
     name: "cake & desserts",
-    image: ""
+    image: cakeImage
+  },
+  {
+    name: "drink",
+    image: drinkImage
   }
 ]
 
@@ -49,7 +60,7 @@ function App() {
       {!selectedCategory && (
         <>
         <h1 className='text-2xl font-bold text-center mb-6'>Explore Our Menu</h1>
-        <div className='gird grid-cols-2 md:grid-cols-4 gap-6'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
           {categories.map((cat) => (
             <CategoryCard 
             key={cat.name}
