@@ -10,11 +10,10 @@ const Header = () => {
         <img src={logo} alt="logo" className='w-10 h-10 rounded-full'/>
         <h1 className='text-xl font-bold text-red-950'>Darchin Café</h1>
       </div>
-        {/* <h1 className='flex justify-center mt-4 font-bold italic text-lg'>My Resturant Menu</h1> */}
         <nav className='flex items-center space-x-4'>
         <Link to='/' className='text-red-950 hover:text-gray-300 font-bold'>Home</Link>
         <Link to='/about' className='text-red-950 hover:text-gray-300 font-bold'>About Us</Link>
-        <Link to='/contactn' className='text-red-950 hover:text-gray-300 font-bold'>Contact Us</Link>
+        <Link to='/contact' className='text-red-950 hover:text-gray-300 font-bold'>Contact Us</Link>
         <a href='https://www.instagram.com/darchincafe/?hl=en#' className='text-red-950 hover:text-gray-300 text-xl'><FaInstagram /></a>
         </nav>
     </header>
