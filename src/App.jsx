@@ -51,7 +51,7 @@ const categories = [
 function App() {
 
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const filteredItems = menu.filter(item => item.category === selectedCategory)
+  const filteredItems = menu.filter((item) => item.category === selectedCategory)
   return (
     <div >  
     <Header></Header>
@@ -72,20 +72,22 @@ function App() {
         </>
       )}
 
+     
+
       {selectedCategory && (
         <div>
+          <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+            {filteredItems.map((item) => (
+              <MenuItem key={item.id} items={item}></MenuItem>
+            ))}
+          </div>
           <div className='flex justify-between items-center mb-4'>
-            <h2 className='text-xl font-bold capitalize'>{selectedCategory}</h2>
+            {/* <h2 className='text-xl font-bold capitalize'>{selectedCategory}</h2> */}
             <button
             onClick={() => setSelectedCategory(null)}
-            className='text-red-600 underline'>
+            className='text-gray-50 bg-red-950 mt-9 rounded-md p-2'>
                ← Back to Categories
             </button>
-          </div>
-          <div className=' gird grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-            {filteredItems.map(item => (
-              <MenuItem key={item.id} item={item}></MenuItem>
-            ))}
           </div>
         </div>
       )}
