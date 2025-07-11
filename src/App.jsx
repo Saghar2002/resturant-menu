@@ -66,7 +66,7 @@ function App() {
             key={cat.name}
             category={cat.name}
             image={cat.image}
-            onclick={setSelectedCategory} />
+            onClick={setSelectedCategory} />
           ))}
         </div>
         </>
