@@ -55,7 +55,7 @@ function App() {
   return (
     <div >  
     <Header></Header>
-    <HeroSection></HeroSection>
+    {!selectedCategory &&  <HeroSection></HeroSection>}
     <div className='max-w-6xl mx-auto p-6'>
       {!selectedCategory && (
         <>
@@ -76,7 +76,7 @@ function App() {
 
       {selectedCategory && (
         <div>
-          <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10'>
             {filteredItems.map((item) => (
               <MenuItem key={item.id} items={item}></MenuItem>
             ))}
