@@ -13,6 +13,7 @@ import pizzaImage from "./assets/pictures/pizza.jfif"
 import appetizerImage from "./assets/pictures/nacho food mexican cartoon nacho food mexican png.jfif"
 import cakeImage from "./assets/pictures/Cheesecake Clipart PNG _ 10 JPG _ Watercolor Cake Baking Clipart Food Clipart Kawaii Dessert Strawberry Oreo Nutella Cake Dessert Cake.jfif"
 import drinkImage from "./assets/pictures/drink.jfif"
+import Cart from './components/Cart'
 const categories = [
   {
     name: "coffee",
@@ -95,6 +96,7 @@ function App() {
     </div>
   )
 }
+
 
 export default App
 
