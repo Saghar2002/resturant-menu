@@ -49,7 +49,7 @@ const categories = [
   }
 ]
 
-function App() {
+function Home() {
 
   const [selectedCategory, setSelectedCategory] = useState(null);
   const filteredItems = menu.filter((item) => item.category === selectedCategory)
@@ -98,7 +98,7 @@ function App() {
 }
 
 
-export default App
+export default Home
 
 
 
