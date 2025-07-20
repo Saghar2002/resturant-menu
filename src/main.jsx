@@ -2,9 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter , Routes , Route } from 'react-router'
 import { CartProvider } from './context/CartContext.jsx'
-import Cart from './components/Cart.jsx'
+import Cart from './pages/Cart.jsx'
 import Home from './Home.jsx'
-import Contact from './components/Contact.jsx'
+import Contact from './pages/Contact.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
